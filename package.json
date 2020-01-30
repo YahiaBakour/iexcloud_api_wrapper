@@ -1,25 +1,64 @@
 {
-  "name": "iexcloud_api_wrapper",
-  "version": "1.1.5",
+  "_args": [
+    [
+      "iexcloud_api_wrapper@1.1.5",
+      "/Users/yahiabakour/Documents/GitHub/StockAlarm/StockAlarmServer/functions"
+    ]
+  ],
+  "_from": "iexcloud_api_wrapper@1.1.5",
+  "_id": "iexcloud_api_wrapper@1.1.5",
+  "_inBundle": false,
+  "_integrity": "sha512-9RnrspefNSCUlt9t9Po6B2PDzCEYxb7pCVkR0/YLhydXjqp0NLsT7ak4VFy60wDYMmsUr7UgzXGPa1HUBfP72g==",
+  "_location": "/iexcloud_api_wrapper",
+  "_phantomChildren": {
+    "ms": "2.0.0"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "iexcloud_api_wrapper@1.1.5",
+    "name": "iexcloud_api_wrapper",
+    "escapedName": "iexcloud_api_wrapper",
+    "rawSpec": "1.1.5",
+    "saveSpec": null,
+    "fetchSpec": "1.1.5"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/iexcloud_api_wrapper/-/iexcloud_api_wrapper-1.1.5.tgz",
+  "_spec": "1.1.5",
+  "_where": "/Users/yahiabakour/Documents/GitHub/StockAlarm/StockAlarmServer/functions",
+  "author": {
+    "name": "Bruce C. Schardt"
+  },
+  "bugs": {
+    "url": "https://github.com/schardtbc/iexcloud_api_wrapper/issues"
+  },
+  "dependencies": {
+    "@types/dotenv": "6.1.0",
+    "@types/eventsource": "1.1.0",
+    "axios": "0.19.0",
+    "dotenv": "6.2.0",
+    "eventsource": "1.0.7"
+  },
   "description": "IEX Investors Exchange, IEXCLOUD API Wrapper, Financial Data,TypeScript",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest --config jestconfig.json",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json -c tslint.json",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags",
-    "typedoc": "typedoc --mode modules -module commonjs --exclude **/*.test.ts --out docs/typedoc"
+  "devDependencies": {
+    "@types/jest": "23.3.11",
+    "jest": "23.6.0",
+    "nyc": "13.1.0",
+    "prettier": "1.15.3",
+    "ts-jest": "23.10.5",
+    "tslint": "5.12.0",
+    "tslint-config-prettier": "1.17.0",
+    "typedoc": "0.14.2",
+    "typescript": "3.2.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/schardtbc/iexcloud_api_wrapper.git"
-  },
+  "files": [
+    "lib/**/*",
+    "USAGE.md"
+  ],
+  "homepage": "https://github.com/schardtbc/iexcloud_api_wrapper#readme",
   "keywords": [
     "IEX",
     "IEXCLOUD",
@@ -27,32 +66,25 @@
     "MARKET-DATA",
     "API-WRAPPER"
   ],
-  "author": "Bruce C. Schardt",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/schardtbc/iexcloud_api_wrapper/issues"
+  "main": "./lib/index.js",
+  "name": "iexcloud_api_wrapper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schardtbc/iexcloud_api_wrapper.git"
   },
-  "homepage": "https://github.com/schardtbc/iexcloud_api_wrapper#readme",
-  "devDependencies": {
-    "@types/jest": "24.0.15",
-    "jest": "24.8.0",
-    "nyc": "14.1.1",
-    "prettier": "1.18.2",
-    "ts-jest": "24.0.2",
-    "tslint": "5.18.0",
-    "tslint-config-prettier": "1.18.0",
-    "typedoc": "0.14.2",
-    "typescript": "3.5.2"
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "postversion": "git push && git push --tags",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "test": "jest --config jestconfig.json",
+    "typedoc": "typedoc --mode modules -module commonjs --exclude **/*.test.ts --out docs/typedoc",
+    "version": "npm run format && git add -A src"
   },
-  "files": [
-    "lib/**/*",
-    "USAGE.md"
-  ],
-  "dependencies": {
-    "@types/dotenv": "6.1.1",
-    "@types/eventsource": "1.1.0",
-    "axios": "0.19.0",
-    "dotenv": "6.2.0",
-    "eventsource": "1.0.7"
-  }
+  "types": "./lib/index.d.ts",
+  "version": "1.1.5"
 }
